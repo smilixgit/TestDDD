@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    username: root
+    password: rootLi_xiao
+    #password: Li70975_
+    #url: jdbc:mysql://sh-cynosdbmysql-grp-1cvelohg.sql.tencentcdb.com:25609/ceshi?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://rm-bp1wlk01v915x7ulq0o.mysql.rds.aliyuncs.com:3306/miniprogram?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # redis配置
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    lettuce:
+      pool:
+        max-idle: 16
+        max-active: 32
+        min-idle: 8
+
+# mybatis plus ??
+mybatis-plus:
+  type-aliases-package: com.openl.testddd.mapper
+logging:
+  config: classpath:config/log/logback.xml
+# jwt 配置
+jwt:
+  header: "Authorization"     # token 返回头部
+  tokenPrefix: "smilix "      # token 前缀
+  secret: "qwertyuiop1214156" # 私钥
+
+
+
