@@ -14,6 +14,12 @@ public class ResponseData<T> {
         this.data = data;
     }
 
+    public ResponseData(int code, String message)
+    {
+        this.code=code;
+        this.message=message;
+    }
+
     // Getters and setters...
 
     public int getCode() {

@@ -9,13 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 //管理后台控制
 @RestController
-@RequestMapping("/admin")
-public class adminController {
+@RequestMapping("/applet")
+public class appletController {
 
     @RequestMapping("/test")
     @ResponseBody
     public String test()
     {
+
         return new ResponseData<>(200,"加载成功").toJsonString();
     }
 }
